@@ -57,12 +57,15 @@ const App = () => {
               <img className='product-detail__img' src={selectedProduct.PictureURL} alt={selectedProduct.Name}/>
               <div className='product-detail__info__wrapper'>
                 <h2 className='product-detail__info__name'>{selectedProduct.Name}</h2>
+                <h5 className='product-detail__info__name'>Ratings: {selectedProduct.RatingAvg}</h5>
                 <p className='product-detail__info__description'>{selectedProduct.Description}</p>
               </div>
               <div className='product-detail__buy__wrapper'>
+                <div style={{display: 'flex'}}>
                 <p className='product-detail__info__retailprice'>{selectedProduct['Retail Price']}</p>
-                <p className='product-detail__info__price'>{selectedProduct.Price}</p>
-                <p className='product-detail__info__status'>Out of stock</p>
+                  <p className='product-detail__info__price'>{selectedProduct.Price}</p>
+                </div>
+                  <p className='product-detail__info__status'>Out of stock</p>
                 <button className='product-detail__info__button' onClick={addToCart}>Add to cart</button>
               </div>
             </div>
