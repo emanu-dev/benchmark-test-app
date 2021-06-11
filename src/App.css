@@ -38,7 +38,15 @@
 .product__info__price {
 
 }
-.product__details-btn {}
+.product__details-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: mediumseagreen;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
 
 .product-details__wrapper {
   align-items: center;
@@ -64,6 +72,10 @@
 
 }
 .product-detail__buy__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
 
 }
 .product-detail__info__retailprice {
@@ -82,8 +94,18 @@
 .product__add-cart {
   color: #fff;
   position: absolute;
-  background: lime;
+  background: mediumseagreen;
   padding: 20px;
   top: 0;
   left: 50%;
+}
+
+.product-detail__info__button {
+  cursor: pointer;
+  color: #fff;
+  background-color: mediumseagreen;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
 }

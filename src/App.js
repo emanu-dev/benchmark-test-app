@@ -40,7 +40,7 @@ const App = () => {
                     <img className='product__thumb' src='https://dummyimage.com/150x150/AAF4EE/000000' alt={product.Name} />
                     <div className='product__info__wrapper'>
                       <h3 className='product__info__name'>{product.Name}</h3>
-                      <p className='product__info__price'>${selectedProduct.Price}</p>
+                      <p className='product__info__price'>${product.Price}</p>
                     </div>
                     <button onClick={onClick} className='product__details-btn'>View Details</button>
                   </div>
@@ -63,7 +63,7 @@ const App = () => {
                 <p className='product-detail__info__retailprice'>{selectedProduct['Retail Price']}</p>
                 <p className='product-detail__info__price'>{selectedProduct.Price}</p>
                 <p className='product-detail__info__status'>Out of stock</p>
-                <button className='product-detail__info__status' onClick={addToCart}>Add to cart</button>
+                <button className='product-detail__info__button' onClick={addToCart}>Add to cart</button>
               </div>
             </div>
           </div>
